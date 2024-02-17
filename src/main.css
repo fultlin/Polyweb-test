@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "Montserate";
+  src: url("../src/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+:root {
+  --background-color: #fbefdf;
+  --secondary-color: #f7d4c6;
+  --text-color: #444444;
+}
+
+/* основа */
+
+#root {
+  margin-top: 0;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font-family);
+}
+
+h2,
+p,
+a {
+  color: var(--text-color);
+  font-family: "Montserate";
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 72.5px;
+  padding-top: 72.5px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* header */
+
+header {
+  background-color: var(--secondary-color);
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 14.5px;
+}
+
+.header-top--left {
+  display: flex;
+  flex-direction: row;
+  gap: 51px;
+}
+
+.ContactsAndTime {
+  display: flex;
+  flex-direction: row;
+  gap: 51.5px;
+}
+
+.ContactsAndTime-item {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+.ContactsAndTime-item--1 a {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.messengers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 23px;
+}
+
+.header-top--right {
+  display: flex;
+  gap: 65px;
+}
+
+.header-top--right a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.line {
+  width: 100vw;
+  height: 1px;
+  margin-left: -120px;
+  background-color: var(--text-color);
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14.5px;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: row;
+  width: 707px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.button-help {
+  border-radius: 25px;
+  border-color: transparent;
+  background-color: #e68380;
+  color: white;
+  padding: 10px 33px;
+  cursor: pointer;
+}
+
+.header-bottom--right {
+  display: flex;
+  gap: 66px;
+}
+
+/* Main */
+/* section1 */
+
+.cat-card {
+  height: 473px;
+  width: 570px;
+  background-color: var(--secondary-color);
+  border-radius: 45px;
+}
+
+.cat-card img {
+  border-radius: 45px;
+  object-fit: cover;
+}
+
+.cat-card span {
+  max-height: max-content;
+  width: 518px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.cat-card p {
+  margin-left: 24px;
+}
+
+.cat-name {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.health {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.healthy {
+  background-color: #9cca86;
+}
+
+.reabilitating {
+  background-color: #d3b15a;
+}
+
+.sick {
+  background-color: #d35a5a;
+}
+
+.new {
+  width: 580px;
+  height: 100px;
+  border-radius: 45px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.new a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.new p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.new img {
+  width: 120px;
+  height: 100px;
+  border-radius: 45px;
+  object-fit: cover;
+}
+
+.card-and-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* section2 */
+
+.projects h2 {
+  padding-bottom: 72.5px;
+  margin: 0;
+  font-weight: 1000;
+}
+
+.card-project {
+  width: 570px;
+  height: 669px;
+  border-radius: 45px;
+  background-color: var(--secondary-color);
+}
+
+.card-project img {
+  border-radius: 45px;
+  object-fit: cover;
+}
+
+.card-project h3 {
+  margin: 20px 20px;
+  font-size: 32px;
+  padding-bottom: 0;
+}
+
+.card-project p {
+  margin: 20px;
+  margin-top: 0;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collect {
+  width: 526px;
+  height: 8px;
+  background-color: #fbefdf;
+  background: linear-gradient(
+    to right,
+    rgba(230 131 128) 85%,
+    rgba(251 239 223) 15%
+  );
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.remaining {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+  color: var(--text-color);
+}
+
+/* section3 */
+.status {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 72.5px;
+  margin-bottom: 72.5px;
+}
+
+.status li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+  align-items: center;
+  padding: 5px 20px;
+  width: 177px;
+  justify-content: space-between;
+}
+
+.status p {
+  font-size: 20px;
+}
+
+.pets-card {
+  width: 374px;
+  height: 470px;
+  background-color: var(--secondary-color);
+  border-radius: 45px;
+}
+
+.pets-card img {
+  width: 374px;
+  height: 318px;
+  border-radius: 45px;
+  object-fit: cover;
+}
+
+.pets-card span {
+  max-height: max-content;
+  width: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.pets-card p {
+  margin: 0 24px;
+}
+
+.our-pets-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.our-pets h2 {
+  font-size: 40px;
+}
+
+/* section4 */
+.send-money {
+  width: 536px;
+  height: 367px;
+  border-radius: 45px;
+  background-color: var(--secondary-color);
+  padding: 40px 15px;
+}
+
+.send-money h2 {
+  font-size: 40px;
+}
+
+.summ {
+  display: block;
+  width: 473px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.other-help {
+  width: 536px;
+  height: 367px;
+  border-radius: 45px;
+  background-color: var(--secondary-color);
+  padding: 40px 25px;
+}
+
+.other-help h2 {
+  font-size: 40px;
+}
+
+.other-help ul {
+  padding-left: 30px;
+}
+
+.other-help li {
+  font-weight: 600;
+  list-style: decimal;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.help-pets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.submit-summ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 472px;
+  margin-top: 25px;
+}
